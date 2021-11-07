@@ -4,9 +4,9 @@ let http = require("http")
 // let bodyParser = require('body-parser');
 let path = require("path")
 
-// const port  = 9000;
+const port  = 80;
 app = express();
-// const server = http.createServer(app).listen(port, () => {})
+const server = http.createServer(app).listen(port, () => {})
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "client")))
