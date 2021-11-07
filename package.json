@@ -12,5 +12,8 @@
     "express":"^4.17.1",
     "http":"0.8.0",
     "socket.io":"2.3.0"
+  },
+  "engines": {
+    "node": "15.x"
   }
 }
