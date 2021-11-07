@@ -6,7 +6,7 @@ let path = require("path")
 
 const port  = 9000;
 app = express();
-const server = http.createServer(app).listen(port, () => {})
+const server = app.listen(port, () => {})
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "client")))
